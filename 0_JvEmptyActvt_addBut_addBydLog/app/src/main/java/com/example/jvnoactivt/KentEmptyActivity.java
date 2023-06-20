@@ -25,17 +25,14 @@ public class KentEmptyActivity extends AppCompatActivity {
         //使用findViewById 得到TextView对象
         textView = (TextView) findViewById(R.id.textView2);
 //使用setText()方法修改文本
+//        textView.setText(R.string.modify);
+//        textView.setBackgroundColor( 0xff00ff );
         if (flag < 100) flag++;
         else flag = 0;
+
         textView.setText("you have clicked once. flag = " + flag);
-        if (flag % 3 == 0)  {
-            textView.setTextColor(0xffff0000); //   透明度   rgb
-        }
-        else if (flag % 3 == 1)  {
-            textView.setTextColor(0xff00ff00);
-        }
-        else if (flag % 3 == 2)  {
-            textView.setTextColor(0xff0000ff);
-        }
+
+        if (flag % 2 == 0)  textView.setTextColor(0xff00ffff);
+        else textView.setTextColor(0x00ff00ff);
     }
 }

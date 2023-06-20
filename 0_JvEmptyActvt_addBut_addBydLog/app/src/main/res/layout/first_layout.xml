@@ -13,12 +13,14 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+          android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_weight="1"
-            android:background="#ff0000ff"
-            android:onClick="sendMessage"
             android:text="Button"
+            android:onClick="sendMessage"
+            android:background="#FF0000"
+
             />
 
         <TextView
@@ -30,6 +32,7 @@
     </LinearLayout>
 
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--    style="?android:attr/borderlessButtonStyle"-->
+<!--    style="?android:attr/borderlessButtonStyle"-->
